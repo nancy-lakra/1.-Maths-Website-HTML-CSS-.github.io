@@ -1,0 +1,210 @@
+
+
+#container {
+    width: 90%;
+    height: 1000px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 a{
+    font-size: 60px;
+    font-weight: 200;
+    color: #861BBF;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color:#69248e;
+}
+
+#header {
+    /* height: 100px; */
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    flex-wrap: wrap;
+} 
+
+#brand {
+    flex: 1;
+    margin-top: 8px;
+    font-family: "Audiowide", sans-serif;
+}
+
+
+#searchbox { 
+    flex: 1;
+    background: linear-gradient(rgba(48, 162, 40, 0.7),rgba(3, 113, 3, 0.9));
+    min-width: 350px;
+    height: 70px;
+    /* margin-top: 15px; */
+    padding: 15px;
+    border: 1px solid rgba(48, 162, 40, 0.7);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    margin-top: 13px;
+    margin-left: 13px;
+    flex: 1;
+    width: 170px;
+    padding: 5px;
+    font-size: 10px;
+    background: white url(search.png) right center no-repeat;
+    border: 1px solid #CBD03E;
+}
+
+.submit {
+    margin-top: 10px;
+    margin-right: 13px;
+    flex: 1;
+    padding: 5px;
+    font-weight: bold;
+    font-family: "Tahoma", Times, serif;
+    color: white;
+    background-color: #861BBF;
+}
+
+.clear {
+    clear: both;
+}
+
+ul {
+    list-style: none;
+}
+
+#menu {
+    padding: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(242, 251, 85, 1),rgba(190, 199, 11, 0.8));
+}
+
+
+#menu ul li {
+    float: left;
+    font-family: "Tahoma", Times, serif;
+    padding: 0px 35px;
+    text-align: center;
+    height: 25px;
+    border-right: 2px solid #861BBF;
+}
+
+#menu ul li:last-child{
+    border-right: none;
+}
+
+#menu a{
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    color: #861BBF;
+    transition: font-size 0.3s ease;
+
+}
+@media screen and (max-width: 500px) {
+    #menu {
+        flex-direction: column;
+        align-content: center;
+    }
+}
+
+#menu a:hover, #menu a.active {
+    font-size: 23px;
+    font-weight: bold;
+    color: #9339c3;
+}
+
+#introduction {
+    background: linear-gradient(rgba(65, 182, 56, 0.6),rgba(3, 113, 3, 0.7));
+    padding: 25px 25px;
+    margin-top: 15px;
+}
+
+#introduction h3 {
+    color: rgb(1, 90, 17);
+    font-size: 27px;
+    font-family: "Tahoma", Times, serif;
+}
+
+#introduction p {
+    color:rgb(3, 109, 23);
+    font-family: "Tahoma", Times, serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.sidebars {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar {
+    /* height: 500px;
+    width: 490px; */
+    border: 2px solid green;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin: 10px;
+}
+
+#leftsidebar {
+    flex: 1;
+    min-width: 300px;
+}
+
+#leftsidebar h3{
+    color: #861BBF;
+    font-size: 30px;
+    padding-left: 40px;
+    font-family: "Tahoma", Times, serif;
+}
+
+#leftsidebar ul li{
+    font-family: "Tahoma", Times, serif;
+    background: white url(arrow.png) left center no-repeat;
+    padding: 5px 40px;
+}
+
+#leftsidebar ul li a{
+    text-decoration: none;
+}
+
+#leftsidebar ul li a:hover{
+    color: red;
+}
+
+#rightsidebar {
+    flex: 1;
+    min-width: 300px;
+}
+
+#rightsidebar h3{
+    color: #861BBF;
+    font-size: 30px;
+    padding-left: 40px;
+    font-family: "Tahoma", Times, serif;
+}
+
+#rightsidebar ul li{
+    font-size: 20px;
+    font-family: "Tahoma", Times, serif;
+    background: white url(tick.png) left center no-repeat;
+    padding: 10px 40px;
+}
+
+#rightsidebar ul li a{
+    text-decoration: none;
+}
+
+.footer {
+    height: 45px;
+    background: linear-gradient(rgba(242, 251, 85, 1),rgba(190, 199, 11, 0.8));
+    padding: 15px 30px;
+    margin-top: auto;
+}
